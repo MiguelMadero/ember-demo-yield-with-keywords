@@ -1,3 +1,11 @@
 <h2 id='title'>Welcome to Ember.js</h2>
 
-{{outlet}}
+{{#my-component}}
+    <p>I'm inside the component and have access to the keywords</p>
+    <p>{{keywordFromComponent}}</p>
+    <p>{{propertyFromApplication}}</p>
+{{/my-component}}
+
+<hr>
+<p>Outside</p>
+<p>{{propertyFromApplication}}</p>
